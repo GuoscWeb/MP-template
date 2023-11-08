@@ -1,0 +1,49 @@
+{
+	"name": "business-card",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"uni-app": {
+		"scripts": {
+			"mp-dev": {
+				"title": "mp-dev",
+				"env": {
+					"UNI_PLATFORM": "mp-weixin",
+					"ENV_TYPE": "development",
+					"UNI_APP_URL": ""
+				}
+			},
+			"mp-test": {
+				"title": "mp-test",
+				"env": {
+					"UNI_PLATFORM": "mp-weixin",
+					"ENV_TYPE": "test",
+					"UNI_APP_URL": ""
+				}
+			},
+			"mp-production": {
+				"title": "mp-production",
+				"env": {
+					"UNI_PLATFORM": "mp-weixin",
+					"ENV_TYPE": "production",
+					"UNI_APP_URL": ""
+				}
+			}
+		}
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"dependencies": {
+		"axios": "^0.27.2",
+		"dayjs": "^1.11.7",
+		"image-conversion": "^2.1.1",
+		"uni-read-pages": "^1.0.5",
+		"uni-simple-router": "^2.0.8-beta.4",
+		"uview-ui": "^2.0.33",
+		"vconsole": "^3.15.0"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}
