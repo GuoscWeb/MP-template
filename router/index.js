@@ -4,7 +4,6 @@ import {
 import store from '@/store/index.js'
 import utils from '@/utils/utils.js'
 
-const tabName = ['Home', 'Order', 'User']
 
 const router = createRouter({
 	platform: process.env.VUE_APP_PLATFORM,
@@ -32,11 +31,6 @@ router.beforeEach((to, from, next) => {
 		} else {
 			next();
 		}
-	}
-	// 每次跳转判断是否为pushTab，根据要push的tab的Name确定它在tablist中的下标
-	if (tabName.indexOf(to.name) !== -1) {
-		let index = store.state.tabBarList.findIndex((item) => item.name == to.name);
-		store.state.currentTab = index == -1 ? 0 : index
 	}
 });
 // 全局路由后置守卫
