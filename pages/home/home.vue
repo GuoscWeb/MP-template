@@ -15,7 +15,7 @@
 export default {
 	data() {
 		return {
-			title: 'This is GSC'
+			title: 'This is GSC！'
 		};
 	},
 	onLoad() {},
