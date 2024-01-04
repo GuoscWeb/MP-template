@@ -25,13 +25,9 @@ router.beforeEach((to, from, next) => {
 			NAVTYPE: 'push'
 		});
 	} else {
-		// 员工角色如果访问Home重定向到Order
-		if (store.state.userInfo.roleId !== 10000 && to.name == "Home") {
-			next({ name: 'Order' });
-		} else {
-			next();
-		}
+		next();
 	}
+}
 });
 // 全局路由后置守卫
 router.afterEach((to, from) => {

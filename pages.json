@@ -6,8 +6,18 @@
 			"meta": {
 				"auth": false
 			}
+		},
+		{
+			"name": "Login",
+			"path": "pages/login/login"
 		}
 	],
+	"tabBar": {
+		"custom": true,
+		"list": [{
+			"pagePath": "pages/home/home"
+		}]
+	},
 	// "tabBar": {
 	// 	"color": "#888888",
 	// 	"selectedColor": "#F1573D",
